@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -460px left -230px, bottom -460px right -230px;
+  background-size: 920px, 920px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 16px;
+  width: 355px;
+  overflow: hidden;
+}
+
+.card-header {
+  height: 140px;
+}
+.card-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+
+.card-body__profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-top: -50px;
+  border: 5px solid white;
+}
+
+.card-body__profile-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body__profile-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.card-body__profile-name span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.card-body__profile-country {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+.card-footer__item {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.card-footer__item h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.card-footer__item p {
+  font-weight: 400;
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+}
+@media (min-width: 375px) {
+  main {
+    background-position: top -460px left -680px, bottom -460px right -680px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    background-position: top -460px left -460px, bottom -460px right -460px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    background-position: top -460px left -230px, bottom -460px right -230px;
+  }
+}
